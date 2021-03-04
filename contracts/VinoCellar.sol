@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/math/SafeMath.sol";
 
-// VinoCellar is the coolest bar in town. You come in with some Grape, and leave with more! The longer you stay, the more Grape you get.
+// VinoCellar is the coolest cellar in town. You come in with some Grape, and leave with more! The longer you stay, the more Grape you get.
 //
 // This contract handles swapping to and from xGRAPE, VinoSwap's staking token.
 contract VinoCellar is ERC20("VinoCellar", "xGRAPE"){

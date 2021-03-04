@@ -62,7 +62,7 @@ contract MasterSomm is Ownable {
     GrapeToken public grape;
     // Dev address.
     address public devaddr;
-    // Block number when bonus SUSHI period ends.
+    // Block number when bonus GRAPE period ends.
     uint256 public bonusEndBlock;
     // GRAPE tokens created per block.
     uint256 public grapePerBlock;
@@ -223,7 +223,7 @@ contract MasterSomm is Ownable {
                 totalAllocPoint
             );
         grape.mint(devaddr, grapeReward.div(10));
-        grape.mint(address(syrup), grapeReward);
+        grape.mint(address(this), grapeReward);
         pool.accGrapePerShare = pool.accGrapePerShare.add(
             grapeReward.mul(1e12).div(lpSupply)
         );
