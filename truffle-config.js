@@ -1,7 +1,7 @@
 const fs = require('fs');
 const HDWalletProvider = require('truffle-hdwallet-provider');
-const mnemonicRopsten = 'anchor hurry logic legal pole say sorry raise obey reveal stove mansion';
-const mnemonic = 'daring amused hospital rice roast peasant prison dish address carpet rural twenty';
+const mnemonicRopsten = '';
+const mnemonic = '';
 //const mnemonic = fs.readFileSync('.secrets').toString().trim();
 
 module.exports = {
@@ -10,7 +10,7 @@ module.exports = {
       provider: () => 
         new HDWalletProvider(
           mnemonicRopsten,
-          'https://ropsten.infura.io/v3/acd3501ee5a14350823d26b521655b4c',
+          'https://ropsten.infura.io/v3/<PROJECT_ID>',
           1,
         ),
       network_id: 3,
@@ -21,7 +21,7 @@ module.exports = {
       provider: () =>
         new HDWalletProvider(
           mnemonic,
-          'https://mainnet.infura.io/v3/acd3501ee5a14350823d26b521655b4c',
+          'https://mainnet.infura.io/v3/<PROJECT_ID>',
           1,
         ),
       network_id: 1,
